@@ -1,12 +1,12 @@
 from agno.agent import Agent
 from agno_practices import openai_gpt_4o
 from agno.embedder.openai import OpenAIEmbedder
-from agno.knowledge.url import URLKnowledge
+from agno.knowledge.url import UrlKnowledge
 from agno.storage.sqlite import SQLiteStorage
 from agno.vectordb.lancedb import LanceDB, SearchType
 
 # Load agno document for the URL
-knowledge = URLKnowledge(urls=["https://docs.agno.com/introduction.md"],
+knowledge = UrlKnowledge(urls=["https://docs.agno.com/introduction.md"],
                          vectordb=LanceDB(
                              uri="tmp/lancedb",
                              table_name="agno_docs",
