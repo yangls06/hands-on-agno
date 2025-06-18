@@ -1,6 +1,5 @@
 from agno.agent import Agent
 from agno_practices import openai_gpt_4o
-from agno.tools.yfinance import YFinanceTools
 
 agent = Agent(
     model=openai_gpt_4o,
