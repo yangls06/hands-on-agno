@@ -2,12 +2,12 @@ from agno.agent import Agent
 from agno_practices import openai_gpt_4o
 from agno.embedder.openai import OpenAIEmbedder
 from agno.knowledge.url import UrlKnowledge
-from agno.storage.sqlite import SQLiteStorage
-from agno.vectordb.lancedb import LanceDB, SearchType
+from agno.storage.sqlite import SqliteStorage
+from agno.vectordb.lancedb import LanceDb, SearchType
 
 # Load agno document for the URL
 knowledge = UrlKnowledge(urls=["https://docs.agno.com/introduction.md"],
-                         vectordb=LanceDB(
+                         vector_db=LanceDb(
                              uri="tmp/lancedb",
                              table_name="agno_docs",
                              search_type=SearchType.hybrid,
@@ -15,7 +15,7 @@ knowledge = UrlKnowledge(urls=["https://docs.agno.com/introduction.md"],
                                  id='text-embedding-3-small', dimensions=1536),
                          ))
 # Store agent sessions in SQLite
-storage = SQLiteStorage(table_name="agent_sessions", db_file="tmp/agent.db")
+storage = SqliteStorage(table_name="agent_sessions", db_file="tmp/agent.db")
 
 # the	agent
 agent = Agent(
@@ -36,5 +36,5 @@ agent = Agent(
 if __name__ == "__main__":
   # Load the knowledge base, comment out after first run
   # Set recreate to True to recreate the knowledge base if needed
-  agent.knowledge.load(recreate=False)
+  agent.knowledge.load(recreate=True)
   agent.print_response("What is Agno?", stream=True)

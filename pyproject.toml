@@ -12,6 +12,9 @@ notebook = "^7.2.1"
 jupyter = "^1.0.0"
 jupyter-server = "^2.14.2"
 agno = "^1.6.2"
+pylance = "^0.29.0"
+pygments = "^2.19.1"
+platformdirs = "^4.3.8"
 
 
 [build-system]
