@@ -37,7 +37,7 @@ playground_app = Playground(agents=[web_agent, finance_agent])
 app = playground_app.get_app()
 
 if __name__ == "__main__":
-    playground_app.serve("playground:app", reload=True)
+    playground_app.serve("06-playground:app", reload=True)
 
 # source .venv/bin/activate
 # pip install openai duckduckgo-search yfinance sqlalchemy 'fastapi[standard]' agno
