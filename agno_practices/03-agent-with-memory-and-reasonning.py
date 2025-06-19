@@ -54,6 +54,7 @@ if __name__ == "__main__":
     )
 
 # (workspace) ~/workspace$ PYTHONPATH=/home/runner/workspace python agno_practices/03-agent-with-memory-and-reasonning.py
+# (workspace) ~/workspace$ python -m agno_practices.03-agent-with-memory-and-reasonning
 # ┏━ Message ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃                                                                                        ┃
 # ┃ My favorite stocks are NVIDIA and TSLA                                                 ┃

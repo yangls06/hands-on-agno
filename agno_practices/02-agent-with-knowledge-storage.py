@@ -40,6 +40,7 @@ if __name__ == "__main__":
   agent.print_response("What is Agno?", stream=True)
 
 # (workspace) ~/workspace$ PYTHONPATH=/home/runner/workspace python agno_practices/02-agent-with-knowledge-storage.py
+# (workspace) ~/workspace$ python -m agno_practices.02-agent-with-knowledge-storage
 # INFO Found 3 documents
 # ┏━ Message ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃                                                                                             ┃
