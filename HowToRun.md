@@ -11,7 +11,8 @@ ERROR: Can not perform a '--user' install. User site-packages are not visible in
 /home/runner/workspace/.venv/bin/python
 /home/runner/workspace/.venv/bin/pip
 9. 安装依赖：pip install agno duckduckgo-search yfinance openai matplotlib pandas
-10. python -m agno_practices.04-multi-agent-team，而不是python agno_practices/04-multi-agent-team.py：
+10. 或者 pip install -r requirements.txt
+11. python -m agno_practices.04-multi-agent-team，而不是python agno_practices/04-multi-agent-team.py：
 > replit中的包管理：https://chatgpt.com/share/6852517f-5cac-8001-be53-d056c199e894
 > https://chatgpt.com/c/68524a1a-3dc0-8001-8a37-593925d78172
 
