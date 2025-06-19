@@ -37,7 +37,10 @@ playground_app = Playground(agents=[web_agent, finance_agent])
 app = playground_app.get_app()
 
 if __name__ == "__main__":
-    playground_app.serve("06-playground:app", host="0.0.0.0", reload=True)
+    playground_app.serve("06-playground:app", reload=True)
 
 # source .venv/bin/activate
 # pip install openai duckduckgo-search yfinance sqlalchemy 'fastapi[standard]' agno
+# 正确的运行方式：本地，不要在replit，因为argo不能访问到replit的localhost
+# 正确的运行命令：PYTHONPATH="$PWD:$PYTHONPATH" python agno_practices/06-playground.py
+# 错误的运行命令：python -m agno_practices.06-playground，会报错：ERROR:    Error loading ASGI app. Could not import module "06-playground".

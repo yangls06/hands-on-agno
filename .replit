@@ -8,7 +8,6 @@ packages = ["vim"]
 [[ports]]
 localPort = 7777
 externalPort = 4200
-exposeLocalhost = true
 
 [[ports]]
 localPort = 8888
